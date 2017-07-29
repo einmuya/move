@@ -1,0 +1,6 @@
+framework module Pods_MoveUITests {
+  umbrella header "Pods-MoveUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
