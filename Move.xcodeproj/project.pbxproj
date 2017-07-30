@@ -17,6 +17,10 @@
 		E90385B31F2C69F50003F466 /* MoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90385B21F2C69F50003F466 /* MoveUITests.swift */; };
 		E90385C21F2CA05C0003F466 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90385C11F2CA05C0003F466 /* HomeViewController.swift */; };
 		E90385C51F2CA17A0003F466 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90385C41F2CA17A0003F466 /* Global.swift */; };
+		E90385C81F2CC1D40003F466 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90385C71F2CC1D40003F466 /* Categories.swift */; };
+		E90385CC1F2CCAC10003F466 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90385CB1F2CCAC10003F466 /* HomeTableViewCell.swift */; };
+		E903D7831F2E064600BB1696 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903D7821F2E064600BB1696 /* Extensions.swift */; };
+		E903D7851F2E079B00BB1696 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903D7841F2E079B00BB1696 /* LoadingBar.swift */; };
 		EEB752E3F0B22047DBF15D2A /* Pods_Move.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA58EBD9F7D9F3EF10222A9 /* Pods_Move.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +64,10 @@
 		E90385B41F2C69F50003F466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90385C11F2CA05C0003F466 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E90385C41F2CA17A0003F466 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E90385C71F2CC1D40003F466 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		E90385CB1F2CCAC10003F466 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		E903D7821F2E064600BB1696 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E903D7841F2E079B00BB1696 /* LoadingBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingBar.swift; sourceTree = "<group>"; };
 		F93BBAD760537272FA28894D /* Pods-MoveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoveUITests/Pods-MoveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +147,7 @@
 		E90385911F2C69F40003F466 /* Move */ = {
 			isa = PBXGroup;
 			children = (
+				E90385C61F2CC1AB0003F466 /* Models */,
 				E90385C31F2CA1690003F466 /* Helpers */,
 				E90385C01F2CA04A0003F466 /* Home */,
 				E90385921F2C69F40003F466 /* AppDelegate.swift */,
@@ -172,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				E90385C11F2CA05C0003F466 /* HomeViewController.swift */,
+				E90385CB1F2CCAC10003F466 /* HomeTableViewCell.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -180,8 +190,18 @@
 			isa = PBXGroup;
 			children = (
 				E90385C41F2CA17A0003F466 /* Global.swift */,
+				E903D7821F2E064600BB1696 /* Extensions.swift */,
+				E903D7841F2E079B00BB1696 /* LoadingBar.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E90385C61F2CC1AB0003F466 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E90385C71F2CC1D40003F466 /* Categories.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,7 +488,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E903D7851F2E079B00BB1696 /* LoadingBar.swift in Sources */,
 				E90385931F2C69F40003F466 /* AppDelegate.swift in Sources */,
+				E903D7831F2E064600BB1696 /* Extensions.swift in Sources */,
+				E90385CC1F2CCAC10003F466 /* HomeTableViewCell.swift in Sources */,
+				E90385C81F2CC1D40003F466 /* Categories.swift in Sources */,
 				E90385C21F2CA05C0003F466 /* HomeViewController.swift in Sources */,
 				E90385C51F2CA17A0003F466 /* Global.swift in Sources */,
 			);

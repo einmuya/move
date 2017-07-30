@@ -5,7 +5,6 @@ target 'Move' do
     pod 'SwiftyJSON', '3.0.0'
     pod 'Alamofire', '~> 4.4'
     pod 'HanekeSwift', :git => 'https://github.com/jasonnoahchoi/HanekeSwift', :branch => 'swift3'
-    pod 'Kanna', '~> 2.1.0'
 
     target 'MoveTests' do
         inherit! :search_paths
