@@ -70,7 +70,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="45" id="TD9-zy-Su2"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                                             <state key="normal" title="BEKIJK JE AFSPRAKEN">
                                                                 <color key="titleColor" red="0.88627450980392153" green="0.43137254901960786" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>

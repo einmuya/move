@@ -72,6 +72,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             // Setup category button
             cell.categoryButton.categoryButton()
+            cell.categoryButton.addTarget(self, action: #selector(handleCategoryButtonTap), for: .touchUpInside)
             
             // Set up category view
             let imageURL = URL(string: categoryFeed.categoryImage)
@@ -92,6 +93,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
+    func handleCategoryButtonTap(){
+        alert("BEKIJK JE AFSPRAKEN", message: "Tap Registered")
+    }
     
     func handleRefresh(_ sender: UIRefreshControl){
         if category.count > 0{
