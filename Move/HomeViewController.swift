@@ -59,14 +59,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(category.count)
         return category.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeTableViewCell
-        
+        cell.selectionStyle = .none
         let categoryFeed = category[(indexPath as NSIndexPath).row]
         
         if indexPath.row == 0{
@@ -90,11 +89,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.categoryDescription.text = categoryFeed.categoryTitle
         }
         
-        
- 
-        
         return cell
     }
+    
     
     func handleRefresh(_ sender: UIRefreshControl){
         if category.count > 0{
